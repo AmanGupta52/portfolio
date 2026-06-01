@@ -10,7 +10,7 @@ export default function ParticleBackground() {
         let W = (canvas.width = window.innerWidth)
         let H = (canvas.height = window.innerHeight)
 
-        const PARTICLE_COUNT = 80
+        const PARTICLE_COUNT = 120
         const particles = []
 
         class Particle {
@@ -20,11 +20,19 @@ export default function ParticleBackground() {
             reset() {
                 this.x = Math.random() * W
                 this.y = Math.random() * H
-                this.size = Math.random() * 1.5 + 0.3
-                this.speedX = (Math.random() - 0.5) * 0.3
-                this.speedY = (Math.random() - 0.5) * 0.3
-                this.opacity = Math.random() * 0.4 + 0.05
-                this.color = Math.random() > 0.5 ? '59,130,246' : '139,92,246'
+                this.size = Math.random() * 2 + 0.5
+                this.speedX = (Math.random() - 0.5) * 0.25
+                this.speedY = (Math.random() - 0.5) * 0.25
+                this.opacity = Math.random() * 0.5 + 0.1
+
+                const colors = [
+                    '56,189,248',   // Sky Blue
+                    '125,211,252',  // Light Blue
+                    '34,211,238',   // Cyan
+                    '255,255,255'   // White
+                ]
+
+                this.color = colors[Math.floor(Math.random() * colors.length)]
             }
             update() {
                 this.x += this.speedX
@@ -34,8 +42,14 @@ export default function ParticleBackground() {
             draw() {
                 ctx.beginPath()
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
+
+                ctx.shadowBlur = 15
+                ctx.shadowColor = `rgba(${this.color},0.8)`
+
                 ctx.fillStyle = `rgba(${this.color},${this.opacity})`
                 ctx.fill()
+
+                ctx.shadowBlur = 0
             }
         }
 
@@ -51,8 +65,8 @@ export default function ParticleBackground() {
                         ctx.beginPath()
                         ctx.moveTo(particles[i].x, particles[i].y)
                         ctx.lineTo(particles[j].x, particles[j].y)
-                        ctx.strokeStyle = `rgba(59,130,246,${0.06 * (1 - dist / 120)})`
-                        ctx.lineWidth = 0.5
+                        ctx.strokeStyle = `rgba(125,211,252,${0.08 * (1 - dist / 120)})`
+                        ctx.lineWidth = 0.7
                         ctx.stroke()
                     }
                 }
@@ -88,7 +102,7 @@ export default function ParticleBackground() {
                 inset: 0,
                 zIndex: 0,
                 pointerEvents: 'none',
-                opacity: 0.7,
+                opacity: 0.9,
             }}
         />
     )

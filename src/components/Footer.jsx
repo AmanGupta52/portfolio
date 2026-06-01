@@ -136,6 +136,7 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom bar */}
+                {/* Bottom bar */}
                 <div style={{
                     paddingTop: '24px',
                     borderTop: '1px solid var(--border)',
@@ -146,8 +147,38 @@ export default function Footer() {
                     gap: '12px',
                 }}>
                     <p style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
-                        © 2025 Aman. Crafted with React, Three.js & Framer Motion.
+                        © 2026 Aman. Crafted with React, Three.js & Framer Motion.
                     </p>
+
+                    {/* Resume download in footer */}
+                    <motion.a
+                        href="/resume.pdf"
+                        download="Aman_Gupta_Resume.pdf"
+                        whileHover={{ scale: 1.04, y: -1 }}
+                        style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '6px',
+                            padding: '7px 14px',
+                            background: 'rgba(59,130,246,0.08)',
+                            border: '1px solid rgba(59,130,246,0.2)',
+                            borderRadius: '8px',
+                            fontSize: '12px',
+                            fontWeight: 500,
+                            color: 'var(--accent-blue)',
+                            textDecoration: 'none',
+                            cursor: 'pointer',
+                            transition: 'all 0.2s',
+                        }}
+                    >
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        Download Resume
+                    </motion.a>
+
                     <p style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
                         Mumbai, India 🇮🇳
                     </p>

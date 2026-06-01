@@ -133,26 +133,109 @@ export default function Navbar() {
                     </motion.button>
                 ))}
 
-                <motion.a
-                    href="#contact"
-                    onClick={(e) => { e.preventDefault(); scrollTo('Contact') }}
-                    whileHover={{ scale: 1.04 }}
-                    whileTap={{ scale: 0.96 }}
+                {/* Resume + Hire Me */}
+                <div
                     style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '8px',
                         marginLeft: '8px',
-                        padding: '9px 20px',
-                        background: 'linear-gradient(135deg, #3b82f6, #8b5cf6)',
-                        color: 'white',
-                        borderRadius: '10px',
-                        fontFamily: 'var(--font-body)',
-                        fontSize: '13px',
-                        fontWeight: 600,
-                        textDecoration: 'none',
-                        boxShadow: '0 0 20px rgba(59,130,246,0.3)',
                     }}
                 >
-                    Hire Me
-                </motion.a>
+                    {/* Resume button */}
+                    <motion.a
+                        href="/resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.04, y: -1 }}
+                        whileTap={{ scale: 0.96 }}
+                        style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '6px',
+                            padding: '9px 16px',
+                            background: 'transparent',
+                            color: 'var(--text-secondary)',
+                            border: '1px solid rgba(255,255,255,0.12)',
+                            borderRadius: '10px',
+                            fontFamily: 'var(--font-body)',
+                            fontSize: '13px',
+                            fontWeight: 500,
+                            textDecoration: 'none',
+                            transition: 'all 0.2s ease',
+                            cursor: 'pointer',
+                        }}
+                        onMouseEnter={(e) => {
+                            e.currentTarget.style.borderColor = 'rgba(59,130,246,0.5)'
+                            e.currentTarget.style.color = 'var(--accent-blue)'
+                        }}
+                        onMouseLeave={(e) => {
+                            e.currentTarget.style.borderColor = 'rgba(255,255,255,0.12)'
+                            e.currentTarget.style.color = 'var(--text-secondary)'
+                        }}
+                    >
+                        <svg
+                            width="13"
+                            height="13"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                        >
+                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                        </svg>
+
+                        Resume
+
+                        <a
+                            href="/resume.pdf"
+                            download="Aman_Gupta_Resume.pdf"
+                            onClick={(e) => e.stopPropagation()}
+                            style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                width: 18,
+                                height: 18,
+                                borderRadius: '4px',
+                                background: 'rgba(59,130,246,0.15)',
+                                color: 'var(--accent-blue)',
+                                textDecoration: 'none',
+                                fontSize: '10px',
+                                marginLeft: '2px',
+                            }}
+                            title="Download PDF"
+                        >
+                            ↓
+                        </a>
+                    </motion.a>
+
+                    {/* Hire Me button */}
+                    <motion.a
+                        href="#contact"
+                        onClick={(e) => {
+                            e.preventDefault()
+                            scrollTo('Contact')
+                        }}
+                        whileHover={{ scale: 1.04 }}
+                        whileTap={{ scale: 0.96 }}
+                        style={{
+                            padding: '9px 20px',
+                            background: 'linear-gradient(135deg, #3b82f6, #8b5cf6)',
+                            color: 'white',
+                            borderRadius: '10px',
+                            fontFamily: 'var(--font-body)',
+                            fontSize: '13px',
+                            fontWeight: 600,
+                            textDecoration: 'none',
+                            boxShadow: '0 0 20px rgba(59,130,246,0.3)',
+                            cursor: 'pointer',
+                        }}
+                    >
+                        Hire Me
+                    </motion.a>
+                </div>
             </div>
 
             {/* Mobile hamburger */}

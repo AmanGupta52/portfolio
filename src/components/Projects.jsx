@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { projects } from '../data/portfolioData'
-import FloatingCrystals from './FloatingCrystals'
 
 function ProjectCard({ project, index, inView }) {
     const [hovered, setHovered] = useState(false)
@@ -33,9 +32,6 @@ function ProjectCard({ project, index, inView }) {
             }} />
 
             {/* Glow background */}
-            <FloatingCrystals />
-
-
             <div style={{ padding: '28px' }}>
                 {/* Header */}
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '16px' }}>
