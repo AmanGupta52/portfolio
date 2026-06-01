@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { skills } from '../data/portfolioData'
+import NeuralNetwork from './NeuralNetwork'
 
 const categories = ['All', 'Frontend', 'Backend', 'Database', 'Language', 'Security']
 
@@ -73,6 +74,7 @@ export default function Skills() {
 
     return (
         <section id="skills" className="section" ref={ref} style={{ position: 'relative', zIndex: 1 }}>
+            <NeuralNetwork />
             <div className="ambient-glow" style={{ width: 400, height: 400, background: '#3b82f6', left: '-5%', top: '30%' }} />
 
             <div className="container">

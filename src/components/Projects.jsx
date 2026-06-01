@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import { motion, useInView, AnimatePresence } from 'framer-motion'
 import { projects } from '../data/portfolioData'
+import FloatingCrystals from './FloatingCrystals'
 
 function ProjectCard({ project, index, inView }) {
     const [hovered, setHovered] = useState(false)
@@ -32,19 +33,8 @@ function ProjectCard({ project, index, inView }) {
             }} />
 
             {/* Glow background */}
-            <motion.div
-                animate={{ opacity: hovered ? 1 : 0 }}
-                transition={{ duration: 0.3 }}
-                style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    height: '200px',
-                    background: `radial-gradient(ellipse at 50% 0%, ${project.color}12 0%, transparent 70%)`,
-                    pointerEvents: 'none',
-                }}
-            />
+            <FloatingCrystals />
+
 
             <div style={{ padding: '28px' }}>
                 {/* Header */}

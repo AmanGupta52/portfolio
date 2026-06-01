@@ -64,6 +64,7 @@ export default function Hero() {
                 zIndex: 1,
             }}>
                 <ThreeScene />
+
             </div>
 
             {/* Content */}

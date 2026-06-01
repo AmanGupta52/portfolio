@@ -2,24 +2,48 @@ export const personalInfo = {
     name: "Aman",
     title: "Full Stack Developer",
     subtitle: "& Cybersecurity Enthusiast",
-    tagline: "Building secure, scalable, and stunning digital experiences.",
-    email: "aman@example.com",
-    github: "https://github.com/aman",
-    linkedin: "https://linkedin.com/in/aman",
-    location: "Mumbai, India",
+    tagline: "Building secure, scalable, and intelligent digital experiences.",
+    email: "amangupta032005@gmail.com",
+    github: "github.com/AmanGupta52",
+    linkedin: "www.linkedin.com/in/aman-gupta-pro",
+    location: "Mumbai, Maharashtra, India",
 };
 
 export const skills = [
-    { name: "HTML", level: 95, category: "Frontend", icon: "🌐" },
-    { name: "CSS", level: 90, category: "Frontend", icon: "🎨" },
-    { name: "JavaScript", level: 88, category: "Frontend", icon: "⚡" },
-    { name: "React", level: 85, category: "Frontend", icon: "⚛️" },
-    { name: "Node.js", level: 82, category: "Backend", icon: "🟢" },
-    { name: "Express.js", level: 80, category: "Backend", icon: "🚀" },
-    { name: "MongoDB", level: 78, category: "Database", icon: "🍃" },
-    { name: "Python", level: 80, category: "Language", icon: "🐍" },
-    { name: "Cybersecurity", level: 75, category: "Security", icon: "🔐" },
-    { name: "Kali Linux", level: 72, category: "Security", icon: "🐉" },
+    { name: "HTML5", level: 95, category: "Frontend", icon: "🌐" },
+    { name: "CSS3", level: 92, category: "Frontend", icon: "🎨" },
+    { name: "JavaScript", level: 90, category: "Language", icon: "⚡" },
+    { name: "React.js", level: 88, category: "Frontend", icon: "⚛️" },
+    { name: "React Native", level: 84, category: "Frontend", icon: "📱" },
+    { name: "Bootstrap", level: 90, category: "Frontend", icon: "🅱️" },
+    { name: "Tailwind CSS", level: 82, category: "Frontend", icon: "💨" },
+
+    { name: "Node.js", level: 86, category: "Backend", icon: "🟢" },
+    { name: "Express.js", level: 84, category: "Backend", icon: "🚀" },
+    { name: "REST APIs", level: 85, category: "Backend", icon: "🔗" },
+    { name: "JWT Authentication", level: 80, category: "Backend", icon: "🔐" },
+
+    { name: "MongoDB", level: 85, category: "Database", icon: "🍃" },
+    { name: "Firebase", level: 78, category: "Database", icon: "🔥" },
+
+    { name: "Python", level: 88, category: "Language", icon: "🐍" },
+    { name: "Java", level: 72, category: "Language", icon: "☕" },
+
+    { name: "Cybersecurity", level: 82, category: "Security", icon: "🛡️" },
+    { name: "Kali Linux", level: 85, category: "Security", icon: "🐉" },
+    { name: "Network Security", level: 78, category: "Security", icon: "🌐" },
+    { name: "Penetration Testing", level: 75, category: "Security", icon: "🎯" },
+
+    { name: "TensorFlow", level: 76, category: "AI/ML", icon: "🧠" },
+    { name: "Machine Learning", level: 80, category: "AI/ML", icon: "🤖" },
+    { name: "OpenCV", level: 78, category: "AI/ML", icon: "👁️" },
+    { name: "YOLOv8", level: 75, category: "AI/ML", icon: "🎯" },
+    { name: "MediaPipe", level: 74, category: "AI/ML", icon: "✋" },
+
+    { name: "Git", level: 85, category: "Tools", icon: "📦" },
+    { name: "GitHub", level: 88, category: "Tools", icon: "🐙" },
+    { name: "Postman", level: 84, category: "Tools", icon: "📬" },
+    { name: "Android Studio", level: 80, category: "Tools", icon: "📱" },
 ];
 
 export const projects = [
@@ -83,6 +107,30 @@ export const projects = [
         live: "#",
         featured: true,
     },
+    {
+        id: 6,
+        title: "AutoRed",
+        description:
+            "AI-powered Breach and Attack Simulation framework leveraging reinforcement learning techniques and integrations with security tools for automated security assessments.",
+        tech: ["Python", "AI", "Cybersecurity", "CALDERA"],
+        color: "#8b5cf6",
+        accent: "#a78bfa",
+        github: "#",
+        live: "#",
+        featured: true,
+    },
+    {
+        id: 7,
+        title: "Believe Consultancy Website",
+        description:
+            "Modern consultancy platform built with responsive design, interactive UI components, client testimonials, authentication, and service management features.",
+        tech: ["React", "Bootstrap", "Node.js"],
+        color: "#ec4899",
+        accent: "#f472b6",
+        github: "#",
+        live: "#",
+        featured: false,
+    },
 ];
 
 export const experience = [
@@ -132,6 +180,27 @@ export const certifications = [
         issuer: "IBM / Coursera",
         year: "2024",
         icon: "🐍",
+        color: "#10b981",
+    },
+    {
+        title: "Cybersecurity Internship",
+        issuer: "Digisuraksha Parhari Foundation",
+        year: "2025",
+        icon: "🛡️",
+        color: "#6366f1",
+    },
+    {
+        title: "TryHackMe Security Labs",
+        issuer: "TryHackMe",
+        year: "2025",
+        icon: "🔐",
+        color: "#ef4444",
+    },
+    {
+        title: "Machine Learning Fundamentals",
+        issuer: "Coursera",
+        year: "2025",
+        icon: "🤖",
         color: "#10b981",
     },
     {
