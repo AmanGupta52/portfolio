@@ -133,16 +133,15 @@ export default function Navbar() {
                     </motion.button>
                 ))}
 
-                {/* Resume + Hire Me */}
+                {/* Resume buttons */}
                 <div
                     style={{
                         display: 'flex',
                         alignItems: 'center',
-                        gap: '8px',
-                        marginLeft: '8px',
+                        gap: '6px',
                     }}
                 >
-                    {/* Resume button */}
+                    {/* View Resume */}
                     <motion.a
                         href="/resume.pdf"
                         target="_blank"
@@ -187,29 +186,8 @@ export default function Navbar() {
                         </svg>
 
                         Resume
-
-                        <a
-                            href="/resume.pdf"
-                            download="Aman_Gupta_Resume.pdf"
-                            onClick={(e) => e.stopPropagation()}
-                            style={{
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                width: 18,
-                                height: 18,
-                                borderRadius: '4px',
-                                background: 'rgba(59,130,246,0.15)',
-                                color: 'var(--accent-blue)',
-                                textDecoration: 'none',
-                                fontSize: '10px',
-                                marginLeft: '2px',
-                            }}
-                            title="Download PDF"
-                        >
-                            ↓
-                        </a>
                     </motion.a>
+
 
                     {/* Hire Me button */}
                     <motion.a

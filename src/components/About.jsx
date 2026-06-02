@@ -94,7 +94,7 @@ export default function About() {
                         and creativity
                     </h2>
                     <p className="section-subtitle">
-                        Final-year B.Sc. IT graduate from Mumbai — building secure, scalable, and visually compelling digital experiences.
+                        B.Sc. Information Technology graduate from Mumbai, passionate about building secure, scalable, and visually compelling digital experiences.
                     </p>
                 </motion.div>
 
@@ -175,8 +175,8 @@ export default function About() {
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '28px' }}>
                         <motion.div {...fadeUp(0.15)}>
                             <p style={{ color: 'var(--text-secondary)', fontSize: '16px', lineHeight: 1.8, marginBottom: '16px' }}>
-                                I'm a B.Sc. IT graduate from Mumbai with a passion for building secure, scalable, and visually compelling applications.
-                                My journey spans full-stack development with the MERN stack, computer vision research using YOLOv8 and MediaPipe, and hands-on cybersecurity work with Kali Linux.
+                                I'm a B.Sc. IT graduate from <strong>Sathaye College</strong>, Mumbai, passionate about building secure, scalable, and visually compelling digital experiences.
+                                My expertise includes full-stack development with the MERN stack, computer vision using YOLOv8 and MediaPipe, and cybersecurity research with Kali Linux.
                             </p>
                             <p style={{ color: 'var(--text-secondary)', fontSize: '16px', lineHeight: 1.8 }}>
                                 I believe the best software is both beautiful and bulletproof — where thoughtful UX meets robust backend architecture and security-first thinking.
