@@ -1,6 +1,6 @@
 import { useRef, useMemo } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { Sphere, MeshDistortMaterial, Float, Stars } from '@react-three/drei'
+import { MeshDistortMaterial, Float, Stars } from '@react-three/drei'
 import * as THREE from 'three'
 
 function Globe() {

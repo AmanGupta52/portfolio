@@ -1,4 +1,4 @@
-import { useRef, useEffect } from 'react'
+import { useRef } from 'react'
 import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion'
 import ThreeScene from './ThreeScene'
 import FloatingShapes from './FloatingShapes'
